@@ -1,0 +1,19 @@
+*{padding: 0; margin: 0}
+
+.com-mess {height: 100px; width: 400px;}
+
+.com-name {height: 25px; width: 400px;}
+
+ul {list-style-type: none;}
+
+img {float: left;}
+
+li div {float: left; margin-left: 5px;}
+
+ul li {clear: left; padding-top: 20px;}
+
+li ul li {margin-left: 52px; padding-top: 10px;}
+
+.rep-mess {height: 50px; width: 290px;}
+
+.rep-name {height: 18px; width: 290px;}
