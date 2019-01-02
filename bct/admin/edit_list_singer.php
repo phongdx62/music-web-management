@@ -12,7 +12,7 @@
 			$sinfomation = addslashes(stripslashes($_POST["sinfomation"]));
 			$simg = addslashes(stripslashes($_POST["simg"]));
 			
-			if(isset($sname) && isset($infomation) && isset($simg))
+			if(isset($sname) && isset($sinfomation) && isset($simg))
 			{
 				$singer = new singer();
 				$singer->m_edit_singer($sid, $sname, $sinfomation, $simg);

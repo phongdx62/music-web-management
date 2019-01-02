@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  include("views/v_link_css.php"); 
+  include('public/library/link_css.php'); 
   include("views/v_header.php");
   include("views/v_index_content.php");
   include("models/m_music.php");

@@ -1,5 +1,5 @@
 <div style="margin-left: 300px;">
-	<form action="edit_list_musician.php?sid=<?php echo $sid; ?>" method="post">	
+	<form action="edit_list_musician.php?mid=<?php echo $mid; ?>" method="post">	
 		<h2 style="color: #FF9999; margin-left: 100px;">Sửa thông tin nhạc sĩ</h2>		
 			<div>
 				<input style="height: 30px; width: 500px; color: #00CC99;" type="text" name="mname" placeholder="Tên nhạc sĩ" value="<?php echo $row['mname']; ?>" required>

@@ -12,10 +12,10 @@
 			$minfomation = addslashes(stripslashes($_POST["minfomation"]));
 			$mimg = addslashes(stripslashes($_POST["mimg"]));
 			
-			if(isset($mname) && isset($infomation) && isset($mimg))
+			if(isset($mname) && isset($minfomation) && isset($mimg))
 			{
 				$musician = new musician();
-				$musician->m_edit_singer($mid, $mname, $minfomation, $mimg);
+				$musician->m_edit_musician($mid, $mname, $minfomation, $mimg);
 				$musician->disconnect();
 				ob_start();
 				header('Location: list_musician.php');

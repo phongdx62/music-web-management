@@ -1,4 +1,3 @@
-
     <!-- ======================== Header ======================== -->
     
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #181412; height: 90px; font-family: 'Helvetica', sans-serif;">
@@ -10,7 +9,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <form class="form-inline my-2 my-lg-0 " action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+      <form class="form-inline my-2 my-lg-0 " action="music.php" method="post">
         <input class="form-control mr-sm-2" type="search" placeholder="Tìm" aria-label="Search" name="key">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
         name="ok">Tìm kiếm</button>

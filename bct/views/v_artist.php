@@ -7,11 +7,11 @@
     <div class="body">
 	    <div class="content">
 	    	<?php  
-	    		$conn = mysqli_connect("localhost", "root", "", "music_web_management") or die ("error");
-	    		mysqli_set_charset($conn,"utf8");
+	    		include("models/m_singer.php");
+	    		$singer = new singer();
 	    		$sql = "SELECT sid, sname, simg, votelike FROM singer";
-	    		$kq = mysqli_query($conn, $sql);
-	    		while ($data = mysqli_fetch_assoc($kq)) 
+	    		$singer->query($sql);
+	    		while ($data = $singer->fetch_assoc()) 
 	    		{
 	    			echo"<div class='box'>";
 				        echo"<div class='avatar'>";

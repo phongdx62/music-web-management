@@ -30,17 +30,32 @@
         require("./public/library/music_play.php");
       }
     }
+
+    if(isset($_GET["sid"]))
+    {
+      $sid = addslashes(stripslashes($_GET["sid"]));
+
+      $sql = "SELECT sname, sinfomation 
+              FROM music ms
+              INNER JOIN singer sg
+              ON sg.sid = ms.sid
+              WHERE ms.sid = $sid ";
+      $music->query($sql);
+      $data = $music->fetch_assoc();
+      echo "<h1 style='color: #EEDC82; margin-left: 250px;'>Nghệ sĩ : $data[sname]</h1>";
+      echo "<p style='color:white;'>Thông tin: $data[sinfomation]</p>";
+      
+      $sql = "SELECT song, sname, img, mp3, sinfomation 
+              FROM music ms
+              INNER JOIN singer sg
+              ON sg.sid = ms.sid
+              WHERE ms.sid = $sid ";
+      $music->query($sql);        
+      while ($data = $music->fetch_assoc()) 
+      {
+        require("./public/library/music_play.php");
+      } 
+    }
   }
   $music->disconnect();
 ?>  
-        </ul>
-        <div class="force-overflow"></div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      
-    </div>
-  </div>
-  </div>
-  <div style="height: 20px; width: 100%"></div>s    
-</div>

@@ -13,7 +13,6 @@
       </div>
       <div class="content">
         <div class="container">
-
           <div class="row" style="color: #fff;">
             <div class="col-sm-2"></div>
             <div class="col-sm-2">
